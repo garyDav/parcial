@@ -14,6 +14,9 @@ describe.only("Combinatoria", function() {
   it("Combinatoria cuanto x es negativo", function() {
     assert.strictEqual(combinatoria(-5,3), 'error: x no debe ser negativo')
   })
+  it("Combinatoria cuanto n es negativo", function() {
+    assert.strictEqual(combinatoria(5,-3), 'error: n no debe ser negativo')
+  })
   it("Combinatoria con x =0 y n=3", function() {
     assert.strictEqual(combinatoria(0,3), 1)
   })
