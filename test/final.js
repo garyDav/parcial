@@ -19,5 +19,7 @@ describe.only("Kata Fizz Buzz", () => {
   })
   it("debería devolver FIZZBUZZ si el número es divisible por 3 y 5", () => {
     assert.strictEqual(fizzbuzz(15), 'FIZZBUZZ')
+    assert.strictEqual(fizzbuzz(30), 'FIZZBUZZ')
+    assert.strictEqual(fizzbuzz(45), 'FIZZBUZZ')
   })
 })
