@@ -1,9 +1,12 @@
+const isFizz = num => num % 3 === 0
+const isBuzz = num => num % 5 === 0
+
 function fizzbuzz(num) {
-  if(num % 3 === 0 && num % 5 === 0)
+  if(isFizz(num) && isBuzz(num))
     return 'FIZZBUZZ'
-  if(num % 3 === 0)
+  if(isFizz(num))
     return 'FIZZ'
-  if(num % 5 === 0)
+  if(isBuzz(num))
     return 'BUZZ'
   return num.toString();
 }
